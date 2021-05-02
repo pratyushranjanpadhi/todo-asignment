@@ -81,8 +81,8 @@ const App = () => {
                <h1 className="form-heading">Add item</h1>
                <form onSubmit={submitHandler}>
                   <input className="form-input" value={formValue} onChange={(e) => setFormValue(e.target.value)} required type="text" />
-                  <button className="form-button" type="submit">
-                     Edit
+                  <button className="form-button form-button-edit" type="submit">
+                     Update
                   </button>
                </form>
             </div>
@@ -108,6 +108,13 @@ const App = () => {
             <h2 className="completed-heading">Completed Items</h2>
             {renderCompletedItems()}
          </div>
+
+         <h3 className="github-link">
+            {" "}
+            <a href="https://github.com/pratyushranjanpadhi/todo-asignment" target="_blank">
+               Github link of this project
+            </a>{" "}
+         </h3>
       </>
    );
 };

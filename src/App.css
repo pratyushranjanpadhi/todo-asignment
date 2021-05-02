@@ -40,6 +40,12 @@ html {
    font-weight: 700;
 }
 
+.form-button-edit {
+   background-color: red;
+   color: wheat;
+   padding: 10px 20px;
+}
+
 /* TODO */
 .todo {
    padding: 20px;
@@ -109,4 +115,10 @@ html {
    font-weight: 400;
    margin-right: 10px;
    text-decoration: line-through;
+}
+
+.github-link {
+   text-decoration: none;
+   padding: 5px 10px;
+   margin: 10px;
 }
