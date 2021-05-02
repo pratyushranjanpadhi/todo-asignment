@@ -1,38 +1,112 @@
-.App {
-  text-align: center;
+*,
+*::before,
+*::after {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+   font-family: Lato, sans-serif;
+   padding: 30px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Form */
+.form {
+   width: 60vw;
+   padding: 20px;
+   border-bottom: 2px dotted #000;
+   margin-bottom: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.form-heading {
+   font-weight: 400;
+   margin-bottom: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.form-input {
+   padding: 10px;
+   width: 300px;
+   margin-right: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form-input:focus {
+   outline: none;
+}
+
+.form-button {
+   padding: 10px 15px;
+   margin-right: 10px;
+   font-weight: 700;
+}
+
+/* TODO */
+.todo {
+   padding: 20px;
+   margin: 10px 0;
+   width: 60vw;
+   border-bottom: 2px dotted #000;
+   min-height: 200px;
+}
+
+.todo-heading {
+   font-weight: 400;
+   margin-bottom: 10px;
+}
+
+.todo-item {
+   padding: 10px;
+   margin-bottom: 5px;
+   width: 60%;
+   display: flex;
+   align-items: center;
+   background-color: rgb(243, 236, 236);
+   border: 1px solid grey;
+}
+
+.todo-input {
+   margin-right: 10px;
+   height: 40px;
+}
+
+.todo-itemname {
+   font-size: 20px;
+   font-weight: 400;
+   margin-right: 10px;
+}
+
+/* Completed */
+.completed {
+   padding: 20px;
+   margin: 10px 0;
+   width: 60vw;
+   border-bottom: 2px dotted #000;
+   min-height: 200px;
+}
+
+.completed-heading {
+   font-weight: 400;
+   margin-bottom: 10px;
+}
+
+.completed-item {
+   padding: 10px;
+   margin-bottom: 5px;
+   width: 60%;
+   display: flex;
+   align-items: center;
+   background-color: rgb(236, 227, 227);
+   border: 1px solid grey;
+}
+
+.completed-input {
+   margin-right: 10px;
+   height: 40px;
+}
+
+.completed-itemname {
+   font-size: 20px;
+   font-weight: 400;
+   margin-right: 10px;
+   text-decoration: line-through;
 }
